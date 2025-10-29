@@ -2,7 +2,6 @@ import css from '../css/CafeInfo.module.css';
 import { useState } from 'react';
 
 export default function CafeInfo() {
-  const [votes, setVotes] = useState<number | null>(null);
 
   return (
     <div className={css.container}>
