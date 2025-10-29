@@ -1,5 +1,5 @@
-import css from '../css/VoteOptions.module.css'
-import type { VoteType } from '../types/votes.ts'
+import css from './VoteOptions.module.css'
+import type { VoteType } from '../../types/votes.ts'
 
 
 interface VoteOptionsProps {
