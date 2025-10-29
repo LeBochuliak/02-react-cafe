@@ -1,5 +1,4 @@
 import css from '../css/CafeInfo.module.css';
-import { useState } from 'react';
 
 export default function CafeInfo() {
 
