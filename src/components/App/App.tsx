@@ -28,7 +28,7 @@ export default function App() {
   const totalVotes: number = votes.good + votes.neutral + votes.bad;
 
   const positiveRate: number = totalVotes
-    ? Math.round((votes.good / totalVotes) * 100)
+    ? Math.round(((votes.good + votes.neutral) / totalVotes) * 100)
     : 0;
 
   return (
@@ -36,7 +36,7 @@ export default function App() {
       <div className={css.app}>
         <CafeInfo />
         <VoteOptions 
-          onVotes={handleVote}
+          onVote={handleVote}
           onReset={resetVotes}
           canReset={totalVotes > 0}
         />
